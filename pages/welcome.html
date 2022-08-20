@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>welcome</title>
+        <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+    </head>
+    <script>
+        window.onload = function (){
+            const welcomeImageDocument = document.getElementById("welcome-image").contentDocument;
+            console.log(welcomeImageDocument);
+            const carLink = welcomeImageDocument.getElementById("car");
+            const patioLink = welcomeImageDocument.getElementById("patio");
+            const livingRoomLink = welcomeImageDocument.getElementById("living-room");
+            
+            carLink.onClick = () => console.log('You wanna see the car?');
+            patioLink.onClick = () => console.log('You wanna see the patio?');
+            livingRoomLink.onClick = () => console.log('You wanna see the living room?');
+        }
+    </script>
+<body>
+    <div class="container">
+        <img id="welcome-image" class="main-image" src="../images/house-front.svg" alt="welcome" usemap="#welcome-map" /> </div>
+
+        <!-- <map name="welcome-map">
+            <area shape="rect" coords="309, 437, 375, 490" href="./living-room.html">
+            <area shape="circle" coords="82, 472, 55" href="./patio.html">
+            <area shape="rect" coords="660, 432, 796, 507" href="./car-ride.html">
+        </map> -->
+
+    
+    
+  
+</body>
